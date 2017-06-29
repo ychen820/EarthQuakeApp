@@ -21,33 +21,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8CO-vo-hUs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="uIJ-al-E4B">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8CO-vo-hUs">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EarthQuakeCell" textLabel="bru-fI-EWp" detailTextLabel="UqY-yr-DER" style="IBUITableViewCellStyleSubtitle" id="kwm-jv-ao0">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EarthQuakeCell" textLabel="bru-fI-EWp" detailTextLabel="UqY-yr-DER" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="kwm-jv-ao0">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kwm-jv-ao0" id="3d1-d1-v9M">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bru-fI-EWp">
-                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="15" y="9" width="39" height="24"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UqY-yr-DER">
-                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                                    <rect key="frame" x="15" y="33" width="53" height="18"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -58,20 +63,25 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8CO-vo-hUs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8G1-bT-dgR"/>
+                            <constraint firstItem="8CO-vo-hUs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="0k1-jm-GJD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uIJ-al-E4B" secondAttribute="bottom" id="JHg-h4-T5R"/>
+                            <constraint firstItem="uIJ-al-E4B" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Kzr-b2-Iit"/>
                             <constraint firstItem="8CO-vo-hUs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YG7-9K-FEm"/>
+                            <constraint firstItem="uIJ-al-E4B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="krk-8V-Ebo"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8CO-vo-hUs" secondAttribute="bottom" id="mwL-pJ-Zk5"/>
+                            <constraint firstAttribute="trailing" secondItem="uIJ-al-E4B" secondAttribute="trailing" id="sWr-I1-v9E"/>
                             <constraint firstAttribute="trailing" secondItem="8CO-vo-hUs" secondAttribute="trailing" id="xfo-px-3Su"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Earthquake List" id="tBu-u6-Vz0"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="earthQuakeTableView" destination="8CO-vo-hUs" id="OZQ-qU-adU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1044" y="-76"/>
+            <point key="canvasLocation" x="792.79999999999995" y="-146.17691154422789"/>
         </scene>
         <!--Title-->
         <scene sceneID="L1w-GQ-f3S">
@@ -81,16 +91,16 @@
                         <viewControllerLayoutGuide type="top" id="XAi-lQ-us0"/>
                         <viewControllerLayoutGuide type="bottom" id="gtO-7l-mge"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cS8-xT-S8S">
+                    <view key="view" contentMode="scaleToFill" id="Ya3-Bs-OtI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="ahz-TG-woq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvR-lr-pp1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855" y="-87"/>
+            <point key="canvasLocation" x="1424.8" y="-199.25037481259372"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cWh-nx-C69">
@@ -111,4 +121,7 @@
             <point key="canvasLocation" x="45.600000000000001" y="-19.340329835082461"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="320" height="568"/>
+    </resources>
 </document>

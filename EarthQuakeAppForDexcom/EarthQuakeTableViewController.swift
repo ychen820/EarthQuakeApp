@@ -8,7 +8,7 @@
 
 import UIKit
 import SVProgressHUD
-class EarthQuakeTableViewController: UIViewController {
+class EarthQuakeTableViewController: BaseViewController {
     @IBOutlet weak var earthQuakeTableView: UITableView!
     var features = [EarthQuakeFeature]()
     override func viewDidLoad() {

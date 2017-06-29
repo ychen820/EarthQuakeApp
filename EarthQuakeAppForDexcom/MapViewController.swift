@@ -10,10 +10,14 @@ import UIKit
 import GoogleMaps
 class MapViewController: UIViewController {
     var currenFeature:EarthQuakeFeature?
+    var gmsMapview:GMSMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadMap()
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        loadMap()
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,13 +28,13 @@ class MapViewController: UIViewController {
     func loadMap(){
         if let lng = currenFeature?.coordinates?[0] , let lat = currenFeature?.coordinates?[1], let title = currenFeature?.title{
             let coordinate = CLLocationCoordinate2DMake(lat, lng)
-            let camera = GMSCameraPosition.camera(withLatitude: coordinate.latitude, longitude: coordinate.longitude, zoom: 4.0)
+            let camera = GMSCameraPosition.camera(withLatitude: coordinate.latitude, longitude: coordinate.longitude, zoom: 2.0)
             let marker = GMSMarker(position: coordinate)
-            let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-            view = mapView
+            gmsMapview = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+            view = gmsMapview
             marker.title = title
-            self.navigationItem.title = title
-            marker.map = mapView
+            self.title = title
+            marker.map = gmsMapview
             animateMarker(marker: marker)
             
         }
