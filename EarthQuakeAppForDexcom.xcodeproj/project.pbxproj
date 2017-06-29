@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8773A514CAF31EB104CA3DEC /* Pods_EarthQuakeAppForDexcomTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C3AFE7BF1656CEA77BE4B1 /* Pods_EarthQuakeAppForDexcomTests.framework */; };
+		B6E9D7851695973185627EF1 /* Pods_EarthQuakeAppForDexcom.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9909B4E7D1C0DD2DBC15349 /* Pods_EarthQuakeAppForDexcom.framework */; };
+		C5774FD91F0447BD004D3EC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5774FD81F0447BD004D3EC2 /* AppDelegate.swift */; };
+		C5774FDB1F0447BD004D3EC2 /* EarthQuakeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5774FDA1F0447BD004D3EC2 /* EarthQuakeTableViewController.swift */; };
+		C5774FDE1F0447BD004D3EC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5774FDC1F0447BD004D3EC2 /* Main.storyboard */; };
+		C5774FE01F0447BD004D3EC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5774FDF1F0447BD004D3EC2 /* Assets.xcassets */; };
+		C5774FE31F0447BD004D3EC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5774FE11F0447BD004D3EC2 /* LaunchScreen.storyboard */; };
+		C5774FEE1F0447BD004D3EC2 /* EarthQuakeAppForDexcomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5774FED1F0447BD004D3EC2 /* EarthQuakeAppForDexcomTests.swift */; };
+		C5A049191F044A0800EFAB5D /* EarthquakeDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A049181F044A0800EFAB5D /* EarthquakeDownloadManager.swift */; };
+		C5AAADEA1F04966E001EBAAC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5AAADE91F04966E001EBAAC /* MapViewController.swift */; };
+		C5ABC0151F0472F000A344ED /* EarthQuakeFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ABC0141F0472F000A344ED /* EarthQuakeFeature.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5774FEA1F0447BD004D3EC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5774FCD1F0447BD004D3EC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5774FD41F0447BD004D3EC2;
+			remoteInfo = EarthQuakeAppForDexcom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07C3AFE7BF1656CEA77BE4B1 /* Pods_EarthQuakeAppForDexcomTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarthQuakeAppForDexcomTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2368304B4A73081F9AB1CE0E /* Pods-EarthQuakeAppForDexcom.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthQuakeAppForDexcom.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarthQuakeAppForDexcom/Pods-EarthQuakeAppForDexcom.debug.xcconfig"; sourceTree = "<group>"; };
+		48AF661F25D66285F57ED152 /* Pods-EarthQuakeAppForDexcomTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthQuakeAppForDexcomTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EarthQuakeAppForDexcomTests/Pods-EarthQuakeAppForDexcomTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9909B4E7D1C0DD2DBC15349 /* Pods_EarthQuakeAppForDexcom.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EarthQuakeAppForDexcom.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B378B16A5B96F54720C37CEF /* Pods-EarthQuakeAppForDexcom.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthQuakeAppForDexcom.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarthQuakeAppForDexcom/Pods-EarthQuakeAppForDexcom.release.xcconfig"; sourceTree = "<group>"; };
+		BAFF2340FE5955E61882524A /* Pods-EarthQuakeAppForDexcomTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EarthQuakeAppForDexcomTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EarthQuakeAppForDexcomTests/Pods-EarthQuakeAppForDexcomTests.release.xcconfig"; sourceTree = "<group>"; };
+		C5774FD51F0447BD004D3EC2 /* EarthQuakeAppForDexcom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EarthQuakeAppForDexcom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5774FD81F0447BD004D3EC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5774FDA1F0447BD004D3EC2 /* EarthQuakeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuakeTableViewController.swift; sourceTree = "<group>"; };
+		C5774FDD1F0447BD004D3EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5774FDF1F0447BD004D3EC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5774FE21F0447BD004D3EC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5774FE41F0447BD004D3EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5774FE91F0447BD004D3EC2 /* EarthQuakeAppForDexcomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthQuakeAppForDexcomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5774FED1F0447BD004D3EC2 /* EarthQuakeAppForDexcomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthQuakeAppForDexcomTests.swift; sourceTree = "<group>"; };
+		C5774FEF1F0447BD004D3EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5A049181F044A0800EFAB5D /* EarthquakeDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthquakeDownloadManager.swift; sourceTree = "<group>"; };
+		C5AAADE91F04966E001EBAAC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C5ABC0141F0472F000A344ED /* EarthQuakeFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthQuakeFeature.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5774FD21F0447BD004D3EC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6E9D7851695973185627EF1 /* Pods_EarthQuakeAppForDexcom.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5774FE61F0447BD004D3EC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8773A514CAF31EB104CA3DEC /* Pods_EarthQuakeAppForDexcomTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C01BBAC4B8C1AEADDF703CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9909B4E7D1C0DD2DBC15349 /* Pods_EarthQuakeAppForDexcom.framework */,
+				07C3AFE7BF1656CEA77BE4B1 /* Pods_EarthQuakeAppForDexcomTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3DF583C97294EBF6BBA1751 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2368304B4A73081F9AB1CE0E /* Pods-EarthQuakeAppForDexcom.debug.xcconfig */,
+				B378B16A5B96F54720C37CEF /* Pods-EarthQuakeAppForDexcom.release.xcconfig */,
+				48AF661F25D66285F57ED152 /* Pods-EarthQuakeAppForDexcomTests.debug.xcconfig */,
+				BAFF2340FE5955E61882524A /* Pods-EarthQuakeAppForDexcomTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C5774FCC1F0447BD004D3EC2 = {
+			isa = PBXGroup;
+			children = (
+				C5774FD71F0447BD004D3EC2 /* EarthQuakeAppForDexcom */,
+				C5774FEC1F0447BD004D3EC2 /* EarthQuakeAppForDexcomTests */,
+				C5774FD61F0447BD004D3EC2 /* Products */,
+				C3DF583C97294EBF6BBA1751 /* Pods */,
+				8C01BBAC4B8C1AEADDF703CB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C5774FD61F0447BD004D3EC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5774FD51F0447BD004D3EC2 /* EarthQuakeAppForDexcom.app */,
+				C5774FE91F0447BD004D3EC2 /* EarthQuakeAppForDexcomTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5774FD71F0447BD004D3EC2 /* EarthQuakeAppForDexcom */ = {
+			isa = PBXGroup;
+			children = (
+				C5774FD81F0447BD004D3EC2 /* AppDelegate.swift */,
+				C5774FDA1F0447BD004D3EC2 /* EarthQuakeTableViewController.swift */,
+				C5A049181F044A0800EFAB5D /* EarthquakeDownloadManager.swift */,
+				C5ABC0141F0472F000A344ED /* EarthQuakeFeature.swift */,
+				C5774FDC1F0447BD004D3EC2 /* Main.storyboard */,
+				C5AAADE91F04966E001EBAAC /* MapViewController.swift */,
+				C5774FDF1F0447BD004D3EC2 /* Assets.xcassets */,
+				C5774FE11F0447BD004D3EC2 /* LaunchScreen.storyboard */,
+				C5774FE41F0447BD004D3EC2 /* Info.plist */,
+			);
+			path = EarthQuakeAppForDexcom;
+			sourceTree = "<group>";
+		};
+		C5774FEC1F0447BD004D3EC2 /* EarthQuakeAppForDexcomTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5774FED1F0447BD004D3EC2 /* EarthQuakeAppForDexcomTests.swift */,
+				C5774FEF1F0447BD004D3EC2 /* Info.plist */,
+			);
+			path = EarthQuakeAppForDexcomTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5774FD41F0447BD004D3EC2 /* EarthQuakeAppForDexcom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5774FF21F0447BD004D3EC2 /* Build configuration list for PBXNativeTarget "EarthQuakeAppForDexcom" */;
+			buildPhases = (
+				A4822294346C6CABD3539F7E /* [CP] Check Pods Manifest.lock */,
+				C5774FD11F0447BD004D3EC2 /* Sources */,
+				C5774FD21F0447BD004D3EC2 /* Frameworks */,
+				C5774FD31F0447BD004D3EC2 /* Resources */,
+				CE294B0A24AA95DD248EDA23 /* [CP] Embed Pods Frameworks */,
+				BE3968C87801C4DF14C34C74 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EarthQuakeAppForDexcom;
+			productName = EarthQuakeAppForDexcom;
+			productReference = C5774FD51F0447BD004D3EC2 /* EarthQuakeAppForDexcom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5774FE81F0447BD004D3EC2 /* EarthQuakeAppForDexcomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5774FF51F0447BD004D3EC2 /* Build configuration list for PBXNativeTarget "EarthQuakeAppForDexcomTests" */;
+			buildPhases = (
+				AC2B798A69A8FE2EAF8D42C0 /* [CP] Check Pods Manifest.lock */,
+				C5774FE51F0447BD004D3EC2 /* Sources */,
+				C5774FE61F0447BD004D3EC2 /* Frameworks */,
+				C5774FE71F0447BD004D3EC2 /* Resources */,
+				A12758EFF0E465972D4FA99F /* [CP] Embed Pods Frameworks */,
+				CFDA0E3A2DDD1451E223C718 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5774FEB1F0447BD004D3EC2 /* PBXTargetDependency */,
+			);
+			name = EarthQuakeAppForDexcomTests;
+			productName = EarthQuakeAppForDexcomTests;
+			productReference = C5774FE91F0447BD004D3EC2 /* EarthQuakeAppForDexcomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5774FCD1F0447BD004D3EC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Nathan Chen";
+				TargetAttributes = {
+					C5774FD41F0447BD004D3EC2 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					C5774FE81F0447BD004D3EC2 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C5774FD41F0447BD004D3EC2;
+					};
+				};
+			};
+			buildConfigurationList = C5774FD01F0447BD004D3EC2 /* Build configuration list for PBXProject "EarthQuakeAppForDexcom" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5774FCC1F0447BD004D3EC2;
+			productRefGroup = C5774FD61F0447BD004D3EC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5774FD41F0447BD004D3EC2 /* EarthQuakeAppForDexcom */,
+				C5774FE81F0447BD004D3EC2 /* EarthQuakeAppForDexcomTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5774FD31F0447BD004D3EC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5774FE31F0447BD004D3EC2 /* LaunchScreen.storyboard in Resources */,
+				C5774FE01F0447BD004D3EC2 /* Assets.xcassets in Resources */,
+				C5774FDE1F0447BD004D3EC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5774FE71F0447BD004D3EC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A12758EFF0E465972D4FA99F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarthQuakeAppForDexcomTests/Pods-EarthQuakeAppForDexcomTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4822294346C6CABD3539F7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2B798A69A8FE2EAF8D42C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE3968C87801C4DF14C34C74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarthQuakeAppForDexcom/Pods-EarthQuakeAppForDexcom-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE294B0A24AA95DD248EDA23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarthQuakeAppForDexcom/Pods-EarthQuakeAppForDexcom-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFDA0E3A2DDD1451E223C718 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EarthQuakeAppForDexcomTests/Pods-EarthQuakeAppForDexcomTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5774FD11F0447BD004D3EC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5774FDB1F0447BD004D3EC2 /* EarthQuakeTableViewController.swift in Sources */,
+				C5ABC0151F0472F000A344ED /* EarthQuakeFeature.swift in Sources */,
+				C5A049191F044A0800EFAB5D /* EarthquakeDownloadManager.swift in Sources */,
+				C5AAADEA1F04966E001EBAAC /* MapViewController.swift in Sources */,
+				C5774FD91F0447BD004D3EC2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5774FE51F0447BD004D3EC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5774FEE1F0447BD004D3EC2 /* EarthQuakeAppForDexcomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5774FEB1F0447BD004D3EC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5774FD41F0447BD004D3EC2 /* EarthQuakeAppForDexcom */;
+			targetProxy = C5774FEA1F0447BD004D3EC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5774FDC1F0447BD004D3EC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5774FDD1F0447BD004D3EC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5774FE11F0447BD004D3EC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5774FE21F0447BD004D3EC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5774FF01F0447BD004D3EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5774FF11F0447BD004D3EC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5774FF31F0447BD004D3EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2368304B4A73081F9AB1CE0E /* Pods-EarthQuakeAppForDexcom.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EarthQuakeAppForDexcom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.chen.EarthQuakeAppForDexcom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C5774FF41F0447BD004D3EC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B378B16A5B96F54720C37CEF /* Pods-EarthQuakeAppForDexcom.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EarthQuakeAppForDexcom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.chen.EarthQuakeAppForDexcom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C5774FF61F0447BD004D3EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48AF661F25D66285F57ED152 /* Pods-EarthQuakeAppForDexcomTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EarthQuakeAppForDexcomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.chen.EarthQuakeAppForDexcomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EarthQuakeAppForDexcom.app/EarthQuakeAppForDexcom";
+			};
+			name = Debug;
+		};
+		C5774FF71F0447BD004D3EC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAFF2340FE5955E61882524A /* Pods-EarthQuakeAppForDexcomTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EarthQuakeAppForDexcomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.chen.EarthQuakeAppForDexcomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EarthQuakeAppForDexcom.app/EarthQuakeAppForDexcom";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5774FD01F0447BD004D3EC2 /* Build configuration list for PBXProject "EarthQuakeAppForDexcom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5774FF01F0447BD004D3EC2 /* Debug */,
+				C5774FF11F0447BD004D3EC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5774FF21F0447BD004D3EC2 /* Build configuration list for PBXNativeTarget "EarthQuakeAppForDexcom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5774FF31F0447BD004D3EC2 /* Debug */,
+				C5774FF41F0447BD004D3EC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5774FF51F0447BD004D3EC2 /* Build configuration list for PBXNativeTarget "EarthQuakeAppForDexcomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5774FF61F0447BD004D3EC2 /* Debug */,
+				C5774FF71F0447BD004D3EC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C5774FCD1F0447BD004D3EC2 /* Project object */;
+}
