@@ -115,12 +115,10 @@
 		C5774FD71F0447BD004D3EC2 /* EarthQuakeAppForDexcom */ = {
 			isa = PBXGroup;
 			children = (
+				C5798B0C1F05209100A7D01B /* View */,
+				C5798B0B1F05207900A7D01B /* Models */,
+				C5798B0A1F05206B00A7D01B /* Controller */,
 				C5774FD81F0447BD004D3EC2 /* AppDelegate.swift */,
-				C5774FDA1F0447BD004D3EC2 /* EarthQuakeTableViewController.swift */,
-				C5A049181F044A0800EFAB5D /* EarthquakeDownloadManager.swift */,
-				C5ABC0141F0472F000A344ED /* EarthQuakeFeature.swift */,
-				C5774FDC1F0447BD004D3EC2 /* Main.storyboard */,
-				C5AAADE91F04966E001EBAAC /* MapViewController.swift */,
 				C5774FDF1F0447BD004D3EC2 /* Assets.xcassets */,
 				C5774FE11F0447BD004D3EC2 /* LaunchScreen.storyboard */,
 				C5774FE41F0447BD004D3EC2 /* Info.plist */,
@@ -135,6 +133,32 @@
 				C5774FEF1F0447BD004D3EC2 /* Info.plist */,
 			);
 			path = EarthQuakeAppForDexcomTests;
+			sourceTree = "<group>";
+		};
+		C5798B0A1F05206B00A7D01B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C5AAADE91F04966E001EBAAC /* MapViewController.swift */,
+				C5774FDA1F0447BD004D3EC2 /* EarthQuakeTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C5798B0B1F05207900A7D01B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C5ABC0141F0472F000A344ED /* EarthQuakeFeature.swift */,
+				C5A049181F044A0800EFAB5D /* EarthquakeDownloadManager.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C5798B0C1F05209100A7D01B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5774FDC1F0447BD004D3EC2 /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

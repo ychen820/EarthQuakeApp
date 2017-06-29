@@ -6,6 +6,7 @@ target 'EarthQuakeAppForDexcom' do
   use_frameworks!
   pod 'ObjectMapper', '~> 2.2'
   pod 'GoogleMaps'
+  pod 'SVProgressHUD', '~> 1.1z'
   # Pods for EarthQuakeAppForDexcom
 
   target 'EarthQuakeAppForDexcomTests' do

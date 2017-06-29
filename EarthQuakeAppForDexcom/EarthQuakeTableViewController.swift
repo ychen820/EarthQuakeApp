@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SVProgressHUD
 class EarthQuakeTableViewController: UIViewController {
     @IBOutlet weak var earthQuakeTableView: UITableView!
     var features = [EarthQuakeFeature]()
@@ -55,10 +55,12 @@ extension EarthQuakeTableViewController:UITableViewDataSource{
 // MARK: - Data Reading
 extension EarthQuakeTableViewController{
     func loadDataFromApi(){
+        SVProgressHUD.show()
         EarthquakeDownloadManager.getFeatureObjectsFromArray(url: EarthquakeDownloadManager.api, arrayKey: "features") { (featuresArray) in
             if let features = featuresArray as? [EarthQuakeFeature]{
                 self.features = features
                 DispatchQueue.main.async {
+                    SVProgressHUD.dismiss()
                     self.earthQuakeTableView.reloadData()
                 }
             }

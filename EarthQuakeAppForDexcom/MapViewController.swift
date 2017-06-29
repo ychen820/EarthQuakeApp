@@ -31,8 +31,18 @@ class MapViewController: UIViewController {
             marker.title = title
             self.navigationItem.title = title
             marker.map = mapView
+            animateMarker(marker: marker)
             
         }
+        
+    }
+    
+    func animateMarker(marker:GMSMarker) {
+        var frames : Array<UIImage> = []
+        for i in 26...44 {
+            frames.append(UIImage(named: "Anim 2_\(i)")!)
+        }
+        marker.icon = UIImage.animatedImage(with: frames, duration: 3.0)
         
     }
     /*
