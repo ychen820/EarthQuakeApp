@@ -29,7 +29,10 @@ class EarthQuakeTableViewController: UIViewController {
 extension EarthQuakeTableViewController:UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedFeature = features[indexPath.row]
-        
+        if let mapVC = storyboard?.instantiateViewController(withIdentifier: "MapViewController") as? MapViewController{
+            mapVC.currenFeature = selectedFeature
+            self.navigationController?.pushViewController(mapVC, animated: true)
+        }
     }
 }
 // MARK: - TableViewDataSource
