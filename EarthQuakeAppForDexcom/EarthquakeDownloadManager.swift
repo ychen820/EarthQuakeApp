@@ -9,10 +9,10 @@
 import Foundation
 typealias completionHandle = (Any) -> ()
 class EarthquakeDownloadManager{
-    
+    static let api = URL(string: "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson")!
     class func downloadDataWithURL(url:URL, completion:@escaping completionHandle){
         let session = URLSession.shared
-        session.dataTask(with: url) { (rawData, reponse, err) in
+        let dataTask = session.dataTask(with: url) { (rawData, reponse, err) in
             if err == nil, let data = rawData{
                 do{
                 let jsonData = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
@@ -23,5 +23,30 @@ class EarthquakeDownloadManager{
                 }
             }
         }
+        dataTask.resume()
     }
+    class func getFeaturesArrayFromDict(url:URL,arrayKey:String,completion:@escaping completionHandle){
+        downloadDataWithURL(url: url) { (data) in
+            if let jsonDict = data as? [String:Any]{
+                if let jsonArray = jsonDict[arrayKey] as? [[String:Any]]{
+                    completion(jsonArray)
+                }
+            }
+        }
+    }
+    class func getFeatureObjectsFromArray(url:URL, arrayKey:String,completion:@escaping completionHandle){
+        getFeaturesArrayFromDict(url: url, arrayKey: arrayKey) { (arr) in
+            if let jsonArray = arr as? [[String:Any]]{
+                var features = [EarthQuakeFeature]()
+                for item in jsonArray{
+                    if let feature = EarthQuakeFeature(JSON: item){
+                        features.append(feature)
+                    }
+                }
+                completion(features)
+            }
+        }
+    }
+    
+    
 }
