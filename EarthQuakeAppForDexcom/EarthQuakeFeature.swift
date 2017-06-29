@@ -11,12 +11,14 @@ import ObjectMapper
 struct EarthQuakeFeature:Mappable{
     var mag:Double?
     var id:String?
+    var coordinates:[Double]?
     init?(map: Map) {
         
     }
     mutating func mapping(map: Map) {
-        mag <- map["propoerties.mag"]
+        mag <- map["properties.mag"]
         id <- map["id"]
+        coordinates <- map["geometry.coordinates"]
     }
     
 }
