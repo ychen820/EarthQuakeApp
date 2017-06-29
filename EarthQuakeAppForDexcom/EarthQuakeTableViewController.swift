@@ -14,6 +14,7 @@ class EarthQuakeTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadDataFromApi()
+        earthQuakeTableView.tableFooterView = UIView()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -24,6 +25,15 @@ class EarthQuakeTableViewController: UIViewController {
 
 
 }
+// MARK - TableViewDelegate
+extension EarthQuakeTableViewController:UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedFeature = features[indexPath.row]
+        
+    }
+}
+// MARK: - TableViewDataSource
+
 extension EarthQuakeTableViewController:UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return features.count
@@ -36,10 +46,10 @@ extension EarthQuakeTableViewController:UITableViewDataSource{
              cell.detailTextLabel?.text = "Magnitude: " + String(mag)
         }
         return cell
-       
-        
     }
 }
+
+// MARK: - Data Reading
 extension EarthQuakeTableViewController{
     func loadDataFromApi(){
         EarthquakeDownloadManager.getFeatureObjectsFromArray(url: EarthquakeDownloadManager.api, arrayKey: "features") { (featuresArray) in
