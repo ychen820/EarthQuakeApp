@@ -15,7 +15,7 @@ struct EarthQuakeFeature:Mappable{
         
     }
     mutating func mapping(map: Map) {
-        mag <- map["propoerties.mag"]
+        mag <- map["properties.mag"]
         id <- map["id"]
     }
     
